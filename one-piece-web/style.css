@@ -1,0 +1,233 @@
+/* CSS Document */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html {
+    background-color: #1f1f1f;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 500;
+}
+
+header nav {
+    background-color: rgb(53, 52, 52);
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    word-spacing: 0.05rem;
+    font-size: large;
+}
+
+video {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+ul.list {
+    display: inline-block;
+    text-align: left;
+}
+
+.active {
+    background-color: #1b1b1b;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+    justify-content: center;
+    gap: 2em;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-div img {
+    max-width: 15em;
+    display: block;
+}
+
+.text-div {
+    width: 100%;
+    height: 100%;
+}
+
+.img-text {
+    padding-top: 4rem;
+}
+
+.name {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.desc {
+    margin: 1em;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.text {
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.mainh1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/bg_mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    font-size: x-large;
+}
+
+.saga {
+    color: aquamarine;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.saga-arcs {
+    text-align: center;
+    font-size: 25px;
+}
+
+.image {
+    width: 75vw;
+    height: auto;
+}
+
+.space {
+    padding-top: 3rem;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: large;
+    padding-top: 4rem;
+}
+
+.reference-text {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    padding-inline: 2rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.chart {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: #292929;
+    }
+
+    video {
+        width: 75vw;
+    }
+
+    .container {
+        padding-block: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video-container {
+        padding-top: 6em;
+        gap: 4em;
+    }
+
+    .img-container {
+        padding-top: 3.25rem;
+    }
+
+    .card {
+        flex-direction: row;
+        flex: 0 0 calc(50% - 10em);
+    }
+
+    .mainh1 {
+        background-image: url(images/background.jpg);
+    }
+
+    .chart {
+        font-size: 1.5rem;
+    }
+
+    .saga-arcs {
+        font-size: 20px;
+    }
+
+    .image {
+        width: 50vw;
+    }
+}
