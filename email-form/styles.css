@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #202030;
+  color: white;
+  font-size: 16px;
+}
+
+.container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form {
+  background: #39304a;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px #2e2b2b;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(85, 177, 231);
+  width: 100%;
+}
+
+select {
+  background-color: ;
+}
+
+textarea {
+  height: 20vh;
+  resize: none;
+}
+
+select {
+  height: 3rem;
+}
+
+.submit-button {
+  background-color: #05eafa;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #05eafad1;
+}
+
+.message {
+  background-color: #09ff00;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.message-div {
+  padding-top: 1rem;
+}
+
+.success-message {
+  background-color: #09ff00;
+  border-radius: 0.5rem;
+}
+
+.failure-message {
+  background-color: red;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 100vh;
+  }
+}
